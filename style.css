@@ -1,0 +1,588 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: Overpass;
+  src: url(fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url(imgs/Group\ 7.png);
+  background-size: cover;
+  border-radius: 0px 0px 0px 100px;
+  display: flex;
+  justify-content: center;
+}
+.header {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.head1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons1 {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.38px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+.buttons2 {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.38px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+  gap: 50px;
+}
+.button1 {
+  width: 137px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 28px;
+  opacity: 0px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(255, 80, 92, 1);
+  display: grid;
+  place-content: center;
+}
+select {
+  background: transparent;
+  border: none;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+select > option {
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+}
+select option[value="value-to-hide"] {
+  display: none;
+}
+.select-container {
+  display: inline-block;
+  position: relative;
+}
+.select-container select {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.select-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+  
+}
+.select-container:hover::after {
+  width: 100%;
+}
+.head2 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.button2 {
+  width: 137px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 28px;
+  opacity: 0px;
+  color: rgba(255, 80, 92, 1);
+  background-color: white;
+  display: grid;
+  place-content: center;
+}
+.button3 {
+  width: 137px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 28px;
+  border: 1px solid white;
+  opacity: 0px;
+  display: grid;
+  place-content: center;
+}
+.bigtext1 {
+  font-family: Overpass;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 98.05px;
+  letter-spacing: -1.9199999570846558px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+  margin: 0;
+}
+.smalltext1 {
+  margin: 0;
+  font-family: Overpass;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.64px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+.button1:hover {
+  background-color: rgba(255, 123, 134, 1);
+  color: white;
+}
+.button2:hover {
+  background-color: rgba(255, 123, 134, 1);
+  color: white;
+}
+.button3:hover {
+  color: rgba(255, 80, 92, 1);
+  background-color: white;
+  display: grid;
+  place-content: center;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+}
+.div1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.text1 {
+  width: 100%;
+  font-family: Overpass;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 61.28px;
+  letter-spacing: -1.2000000476837158px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(31, 62, 90, 1);
+}
+.div1_1 {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  position: relative;
+}
+.test {
+  display: flex;
+}
+.div1text {
+  width: 40%;
+}
+.div1text1 {
+  font-family: Overpass;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(31, 62, 90, 1);
+}
+.div1text2 {
+  font-family: Overpass;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(76, 88, 98, 1);
+}
+.frontimg {
+  z-index: 1;
+}
+.backimg {
+  position: absolute;
+  right: 0;
+  top: -40%;
+  z-index: 0;
+}
+.div2 {
+  background-image: url(imgs/Rectangle\ Copy.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  border-radius: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.div2_1 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.div2text {
+  width: 45%;
+  font-family: Overpass;
+}
+.imgphones {
+  position: absolute;
+  left: 10%;
+}
+.text2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 61.28px;
+  letter-spacing: -1.2000000476837158px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+.text3 {
+  font-family: Overpass Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.text2,
+.text3 {
+  margin: 0;
+}
+.div3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.backimg2 {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  z-index: 0;
+}
+footer {
+  background-image: url(imgs/Rectangle.png);
+  width: 100%;
+  height: 359px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.foot2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.foottext1,
+.foottext2 {
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.foottext1 {
+  color: white;
+}
+.foottext2 {
+  opacity: 75%;
+  color: rgba(255, 255, 255, 1);
+}
+.foottext2 > p:hover {
+  text-decoration: underline;
+}
+.menu {
+  display: none;
+}
+.mobimg {
+  display: none;
+}
+.moblap {
+  display: none;
+}
+.mobphones {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  body {
+    gap: 100px;
+  }
+
+  header {
+    height: 500px;
+    border-radius: 0;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .head1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+  }
+  .select {
+    display: none;
+    flex-direction: row;
+  }
+  .menu {
+    display: flex;
+  }
+  .buttons1 {
+    display: none;
+  }
+  .buttons2 {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .bigtext1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .smalltext1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .div1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .div1_1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobimg {
+    display: flex;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .frontimg {
+    display: none;
+  }
+  .div1text1,
+  .div1text2 {
+    text-align: center;
+  }
+  .backimg {
+    display: none;
+  }
+  .backimg2 {
+    display: none;
+  }
+  .div3 {
+    align-items: center;
+  }
+  .imgphones {
+    display: none;
+  }
+  .moblap {
+    display: flex;
+  }
+  .div2_1 {
+    justify-content: center;
+    height: 80%;
+    align-items: flex-end;
+  }
+  .text2,
+  .text3 {
+    text-align: center;
+  }
+  .div2 {
+    height: 625px;
+    background-image: url(imgs/Group\ 22.png);
+    flex-direction: column;
+  }
+  .mobphones {
+    display: block;
+    position: absolute;
+    bottom: 60%;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0px  15% 0px 0px;
+    height: auto;
+    align-items: center;
+  }
+  .foot {
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footimg {
+    display: flex;
+    justify-content: center;
+  }
+  .footimg > img {
+    width: 100%;
+    height: 100%;
+  }
+  .main{
+    gap: 250px
+  }
+}
+@media (max-width: 800px) {
+  .text2 {
+    font-family: Overpass;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 61.28px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .text3 {
+    font-family: Overpass;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .div1text1 {
+    font-family: Overpass;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .div1text2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .foot2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .foottext2,
+  .foottext1 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .mobphones {
+    bottom: 80%;
+  }
+  .bigtext1 {
+    font-family: Overpass;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 55.15px;
+    letter-spacing: -1.0800000429153442px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .smalltext1 {
+    font-family: Overpass;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.58px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
